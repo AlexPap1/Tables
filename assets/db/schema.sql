@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS tables_db;
+CREATE DATABASE tables_db;
+
+USE tables_db;
+
+CREATE TABLE names (
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    guestname VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE table(
+    id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    tablename INTEGER,
+    guestname VARCHAR(30) NOT NULL,
+    FOREIGN KEY (guestname)
+)
